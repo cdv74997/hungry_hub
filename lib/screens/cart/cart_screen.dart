@@ -12,9 +12,10 @@ class CartScreen extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Cart')),
+      appBar: AppBar(title: Text('Cart'), centerTitle: true, backgroundColor: Theme.of(context).primaryColor,),
       body: Center(
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(backgroundColor: Theme.of(context).primaryColor),
           child: Text('Home Screen'),
           onPressed: () {
             Navigator.pushNamed(context, '/');

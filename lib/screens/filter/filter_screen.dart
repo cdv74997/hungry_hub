@@ -12,7 +12,7 @@ class FilterScreen extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Filter')),
+      appBar: AppBar(title: Text('Filter'), centerTitle: true, backgroundColor: Theme.of(context).primaryColor,),
       body: Center(
         child: ElevatedButton(
           child: Text('Home Screen'),

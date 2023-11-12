@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_hub/screens/screens.dart';
 import 'package:hungry_hub/config/app_router.dart';
+import 'config/theme.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,11 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Hungry Hub',
+      theme: theme(),
       onGenerateRoute: AppRouter.onGenerateRoute,
       initialRoute: HomeScreen.routeName,
     );
