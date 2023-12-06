@@ -38,6 +38,6 @@ class CategoryCell extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }

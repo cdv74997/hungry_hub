@@ -99,6 +99,6 @@ class MostPopularCell extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }

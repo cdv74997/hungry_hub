@@ -6,6 +6,7 @@ import 'package:hungry_hub_2/common_widget/popular_restaurant_row.dart';
 import 'package:hungry_hub_2/common_widget/recent_item_row.dart';
 import 'package:hungry_hub_2/common_widget/round_textfield.dart';
 import 'package:hungry_hub_2/common_widget/view_all_title_row.dart';
+import 'package:hungry_hub_2/view/more/order_view.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -156,7 +157,19 @@ class _HomeViewState extends State<HomeView> {
                       ),
                       ),
                       IconButton(
-                        onPressed: (){}, 
+                        onPressed: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const OrderView())
+                            );
+                          
+
+
+                      
+
+
+
+                        }, 
                         icon: Image.asset("assets/img/shopping_cart.png", 
                         width: 25, 
                         height: 25,

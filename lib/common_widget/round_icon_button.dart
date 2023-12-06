@@ -6,7 +6,17 @@ class RoundIconButton extends StatelessWidget {
   final String title;
   final String icon;
   final Color color;
-  const RoundIconButton({super.key, required this.title, required this.icon, required this.color, required this.onPressed});
+  final double fontSize;
+  final FontWeight fontWeight;
+  const RoundIconButton({
+    super.key, 
+    required this.title, 
+    required this.icon, 
+    required this.color, 
+    required this.onPressed, 
+    this.fontSize = 12,
+    this.fontWeight = FontWeight.w500,
+    });
 
   @override 
   Widget build(BuildContext context) {
@@ -35,8 +45,8 @@ class RoundIconButton extends StatelessWidget {
                 title,
                 style: TextStyle(
                   color: TColor.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
+                  fontSize: fontSize,
+                  fontWeight: fontWeight,
                   
                 ),
               ),

@@ -3,6 +3,9 @@ import 'package:hungry_hub_2/common/color_extension.dart';
 import 'package:hungry_hub_2/common_widget/tab_button.dart';
 import 'package:hungry_hub_2/view/home/home_view.dart';
 import 'package:hungry_hub_2/view/menu/menu_view.dart';
+import 'package:hungry_hub_2/view/more/more_view.dart';
+import 'package:hungry_hub_2/view/offer/offer_view.dart';
+import 'package:hungry_hub_2/view/profile/profile_view.dart';
 
 class MainTabView extends StatefulWidget {
   const MainTabView({super.key});
@@ -75,7 +78,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selectTab != 1) {
                     selectTab = 1;
-                    selectPageView = Container();
+                    selectPageView = const OfferView();
                   }
                   if (mounted) {
                     setState(() {});
@@ -90,7 +93,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selectTab != 3) {
                     selectTab = 3;
-                    selectPageView = Container();
+                    selectPageView = ProfileView();
                   }
                   if (mounted) {
                     setState(() {});
@@ -102,7 +105,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selectTab != 4) {
                     selectTab = 4;
-                    selectPageView = Container();
+                    selectPageView = const MoreView();
                   }
                   if (mounted) {
                     setState(() {});

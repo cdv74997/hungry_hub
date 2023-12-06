@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hungry_hub_2/common/color_extension.dart';
 import 'package:hungry_hub_2/common_widget/round_textfield.dart';
 import 'package:hungry_hub_2/view/menu/menu_items_view.dart';
+import 'package:hungry_hub_2/view/more/order_view.dart';
 
 class MenuView extends StatefulWidget {
   const MenuView({super.key});
@@ -75,7 +76,12 @@ class _MenuViewState extends State<MenuView> {
                           ),
                           ),
                           IconButton(
-                            onPressed: (){}, 
+                            onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const OrderView())
+                              );
+                            }, 
                             icon: Image.asset("assets/img/shopping_cart.png", 
                             width: 25, 
                             height: 25,

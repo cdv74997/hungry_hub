@@ -6,6 +6,7 @@ import 'package:hungry_hub_2/common_widget/popular_restaurant_row.dart';
 
 import 'package:hungry_hub_2/common_widget/round_textfield.dart';
 import 'package:hungry_hub_2/view/menu/item_details_view.dart';
+import 'package:hungry_hub_2/view/more/order_view.dart';
 
 
 class MenuItemView extends StatefulWidget {
@@ -156,16 +157,23 @@ class _MenuItemViewState extends State<MenuItemView> {
                       const SizedBox(
                         width: 8,
                       ),
-                      Text(
-                        widget.menuObj["name"].toString(), 
-                        style: TextStyle(
-                          color: TColor.primaryText,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
+                      Expanded(
+                        child: Text(
+                          widget.menuObj["name"].toString(), 
+                          style: TextStyle(
+                            color: TColor.primaryText,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w800,
+                          ),
                         ),
                       ),
                       IconButton(
-                        onPressed: (){}, 
+                        onPressed: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const OrderView())
+                            );
+                        }, 
                         icon: Image.asset("assets/img/shopping_cart.png", 
                         width: 25, 
                         height: 25,

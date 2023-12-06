@@ -132,6 +132,6 @@ class RecentItemRow extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }
