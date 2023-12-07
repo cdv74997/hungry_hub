@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_hub_2/common/color_extension.dart';
 import 'package:hungry_hub_2/common_widget/round_button.dart';
+import 'package:hungry_hub_2/view/more/checkout_view.dart';
 
 
 
@@ -96,8 +97,6 @@ class _OrderViewState extends State<OrderView> {
                     const SizedBox(width: 8,),
                     Expanded(
                       child: Column(
-                        children: [
-                          Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     
@@ -229,7 +228,7 @@ class _OrderViewState extends State<OrderView> {
                     
                   ],
                 ),
-                        ],),
+                        
                     ),
                   ],
                 ),
@@ -290,8 +289,6 @@ class _OrderViewState extends State<OrderView> {
               Padding(
                 padding: const EdgeInsets.symmetric( horizontal: 25),
                 child: Column(
-                        children: [
-                          Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     
@@ -429,14 +426,16 @@ class _OrderViewState extends State<OrderView> {
 
                     const SizedBox(height: 20),
 
-                    RoundButton(title: "Checkout", onPressed: (){}),
+                    RoundButton(title: "Checkout", onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CheckoutView()));
+                    }),
 
                     const SizedBox(height: 20),
                     
                     
                   ],
                 ),
-                        ],),
+                      
                     ),
                  
               
