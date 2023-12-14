@@ -17,13 +17,13 @@ class _MoreViewState extends State<MoreView> {
   List moreArr = [{
     "index": "1",
     "name": "Payment Methods",
-    "image":"assets/img/more_payment.png",
+    "image":"assets/img/payment-method.png",
     "base": 0,
   },
   {
     "index": "2",
     "name": "Orders",
-    "image":"assets/img/more_my_order.png",
+    "image":"assets/img/orders.png",
     "base": 0,
   },
   {
@@ -64,7 +64,7 @@ class _MoreViewState extends State<MoreView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Text("Settings", style: TextStyle(
+                    Text("Account Itinerary", style: TextStyle(
                       color: TColor.primaryText,
                       fontSize: 20,
                       fontWeight: FontWeight.w800,

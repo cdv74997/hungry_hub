@@ -67,7 +67,7 @@ class _MenuItemViewState extends State<MenuItemView> {
         "food_type": "Western Food",
       },
       {
-        "image": "assets/img/cat_sri.png", 
+        "image": "assets/img/chinese.png", 
         "name": "Chinese",
         "rate": "4.3",
         "rating": "124",
@@ -102,7 +102,7 @@ class _MenuItemViewState extends State<MenuItemView> {
         "food_type": "Western Food",
       },
       {
-        "image": "assets/img/cat_sri.png", 
+        "image": "assets/img/chinese.png", 
         "name": "Chinese",
         "rate": "4.3",
         "rating": "124",

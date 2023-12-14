@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hungry_hub_2/common/color_extension.dart';
 import 'package:hungry_hub_2/common_widget/round_button.dart';
 import 'package:hungry_hub_2/view/home/home_view.dart';
+import 'package:hungry_hub_2/view/login/welcome_view.dart';
+import 'package:hungry_hub_2/view/main_tabview/main_tabview.dart';
+
 
 class ConfirmationView extends StatefulWidget {
   const ConfirmationView({super.key});
@@ -88,7 +91,7 @@ class _ConfirmationViewState extends State<ConfirmationView> {
               RoundButton(title: "Track Order", onPressed: (){}),
               TextButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeView()),);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MainTabView()),);
                 },
                 child: Text(
                   "Home",

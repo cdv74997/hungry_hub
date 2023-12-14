@@ -24,7 +24,7 @@ class _ItemDetailsViewState extends State<ItemDetailsView> {
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
-          Image.asset("assets/img/detail_top.png", width: media.width, height: media.width, fit: BoxFit.cover,),
+          Image.asset("assets/img/pizza.png", width: media.width, height: media.width, fit: BoxFit.cover,),
 
           Container(
             height: media.width,

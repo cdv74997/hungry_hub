@@ -17,36 +17,36 @@ class _OfferViewState extends State<OfferView> {
 
   List offerArr = [
     {
-      "image": "assets/img/offer_1.png",
-      "name": "Café de Noires",
+      "image": "assets/img/dennys.png",
+      "name": "Denny's",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "Cafe",
+      "food_type": "American Diner"
     },
     {
-      "image": "assets/img/offer_2.png",
-      "name": "Isso",
+      "image": "assets/img/red_robin.png",
+      "name": "Red Robin",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "Restaurant",
+      "food_type": "American Food"
     },
     {
       "image": "assets/img/offer_3.png",
-      "name": "Cafe Beans",
+      "name": "Coffee Bean and Tea Leaf",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "Cafe",
+      "food_type": "Coffee Shop"
     },
     {
-      "image": "assets/img/offer_1.png",
-      "name": "Café de Noires",
+      "image": "assets/img/yoshinoya.png",
+      "name": "Yoshinoya",
       "rate": "4.9",
       "rating": "124",
-      "type": "Cafa",
-      "food_type": "Western Food"
+      "type": "Japanese",
+      "food_type": "Teriyaki Beef and Chicken"
     },
     {
       "image": "assets/img/offer_2.png",

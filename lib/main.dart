@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_hub_2/view/main_tabview/main_tabview.dart';
 import 'package:hungry_hub_2/view/on_boarding/startup_view.dart';
-
+import 'dart:io';
+import 'package:dotenv/dotenv.dart';
 void main() {
+   var env = DotEnv(includePlatformEnvironment: true)..load();
+  // Access the protected variable directly
+  String? apiKey = env['API_KEY'];
+  
+  // Use apiKey in your API calls
+  debugPrint('API Key: $apiKey');
   runApp(const MyApp());
 }
 
